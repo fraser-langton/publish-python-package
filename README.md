@@ -13,4 +13,8 @@
 (`python -m pip install --user --upgrade twine`) - if not already installed\
 `python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*`
 
-`cd <project/path/here/package_name> for /D %a in ("<package_name>.egg-info" "build" "dist") do rd /s /q %~a python -m build python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*`
+#### All one ctrl V
+`cd <project/path/here/package_name>`\
+`for /D %a in ("<package_name>.egg-info" "build" "dist") do rd /s /q %~a`\
+`python -m build`\
+`python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*`
