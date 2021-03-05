@@ -19,5 +19,5 @@
 ### All one ctrl V
 `cd <project/path/here/package_name>`\
 `python -m build`\
-`python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*`
+`python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*`\
 `for /D %a in ("<package_name>.egg-info" "build" "dist") do rd /s /q %~a`
