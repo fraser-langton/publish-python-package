@@ -2,10 +2,10 @@
 ### Publish a python package in as little commands as possible
 
 #### 1. Change to project folder
-`cd <project/path/here>`
+`cd <project/path/here/package_name>`
 
 #### 2. Package files
-`for /D %a in ("Quandoo.egg-info" "build" "dist") do rd /s /q %~a`
+`for /D %a in ("<package_name>.egg-info" "build" "dist") do rd /s /q %~a`
 (`python -m pip install --upgrade build`)
 `python -m build`
 
