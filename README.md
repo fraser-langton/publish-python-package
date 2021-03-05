@@ -6,9 +6,9 @@
 
 #### 2. Package files
 `for /D %a in ("<package_name>.egg-info" "build" "dist") do rd /s /q %~a`\
-(`python -m pip install --upgrade build`)\
+(`python -m pip install --upgrade build`) - if not already installed\
 `python -m build`
 
 #### 3. Upload files
-(`python -m pip install --user --upgrade twine`)\
+(`python -m pip install --user --upgrade twine`) - if not already installed\
 `python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*`
